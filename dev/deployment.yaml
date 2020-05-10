@@ -1,28 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello
+  name: world
   namespace: demo-project
   labels:
-    app: hello
+    app: world
 spec:
   replicas: 1
   template:
     metadata:
-      name: hello
+      name: world
       labels:
-        app: hello
+        app: world
     spec:
       containers:
-        - name: hello
-          image: harbor.sysco-pcf.sysco.corby.cc/sof/hello:latest
+        - name: world
+          image: harbor.sysco-pcf.sysco.corby.cc/sof/world:latest
           imagePullPolicy: Always
           envFrom:
             - configMapRef:
-                name: hello
-            - secretRef:
-                name: hello
+                name: world
       restartPolicy: Always
   selector:
     matchLabels:
-      app: hello
+      app: world

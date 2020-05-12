@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: world
 data:
-  message.text: Kubernetes
+  message.text: ArgoCD

@@ -7,3 +7,6 @@ configMapGenerator:
   - name: world
     literals:
       - message.text=Default
+generatorOptions:
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous

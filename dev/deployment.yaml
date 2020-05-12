@@ -2,25 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: world
-  namespace: demo-project
   labels:
     app: world
 spec:
-  replicas: 1
-  template:
-    metadata:
-      name: world
-      labels:
-        app: world
-    spec:
-      containers:
-        - name: world
-          image: harbor.sysco-pcf.sysco.corby.cc/sof/world:latest
-          imagePullPolicy: Always
-          envFrom:
-            - configMapRef:
-                name: world
-      restartPolicy: Always
-  selector:
-    matchLabels:
-      app: world
+  replicas: 2
+

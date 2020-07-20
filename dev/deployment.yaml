@@ -10,5 +10,5 @@ spec:
     spec:
       containers:
         - name: world
-          image: harbor.sof-pilot.net/development/world:latest
+          image: harbor.sysco-pcf.sysco.corby.cc/sof/world:latest
 

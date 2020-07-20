@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: world
 data:
-  message.text: Sysco Dev!
+  message.text: Development Land

@@ -6,9 +6,4 @@ metadata:
     app: world
 spec:
   replicas: 2
-  template:
-    spec:
-      containers:
-        - name: world
-          image: harbor.sof-pilot.net/development/world:latest
 

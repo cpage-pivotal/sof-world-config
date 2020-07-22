@@ -6,9 +6,3 @@ metadata:
     app: world
 spec:
   replicas: 2
-  template:
-    spec:
-      containers:
-        - name: world
-          image: harbor.sysco-pcf.sysco.corby.cc/sof/world:latest
-

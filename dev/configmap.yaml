@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: world
 data:
-  message.text: Development Land
+  message.text: Deployment City

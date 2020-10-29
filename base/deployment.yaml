@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: world
-          image: harbor-lab.pks.corby.cc/development/world:latest
+          image: harbor.services.tkg.corby.cc/development/world:latest
           imagePullPolicy: Always
           envFrom:
             - configMapRef:

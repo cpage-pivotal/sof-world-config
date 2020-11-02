@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: world
 data:
-  message.text: DecisionSpace 365
+  message.text: Development
